@@ -1,3 +1,11 @@
+.main {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
 h1{
     color: red;
 }
@@ -7,4 +15,37 @@ h1{
 }
 .not{
     text-decoration: underline;
+}
+.todoItem:hover {
+  cursor: pointer;
+}
+li{
+  display: flex;
+  width: 240px;  
+  justify-content: space-between;
+  margin: 2rem auto;
+}
+li span {
+  font-size: 24px;  
+}
+.not:hover{
+    color: darkred;
+    transition: all 0.3s ease-in-out;
+}
+.fa-trash:hover {
+  transform: scale(1.25);
+  color: darkred;
+  transition: all 0.3s ease-in-out;
+}
+.main a {
+  text-decoration: none;
+  color: #fff;
+  background: #4caf50;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+.main a:hover {
+  background: red;
+  transition: all 0.2s ease-in-out;
 }
